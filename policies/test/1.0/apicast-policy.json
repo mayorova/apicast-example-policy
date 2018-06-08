@@ -1,0 +1,48 @@
+{
+  "$schema": "http://apicast.io/policy-v1/schema#manifest#",
+  "name": "APIcast Test Policy",
+  "summary": "Test policy.",
+  "description": "This policy a test policy.",
+  "version": "1.0",
+  "configuration": {
+    "type": "object",
+    "properties": {
+      "string": {
+        "type": "string",
+        "description": "An example string to print."
+      },
+      "integer": {
+        "type": "integer",
+        "description": "A test integer."
+      },
+      "option": {
+        "type": "string",
+        "description": "One of available options",
+        "oneOf": [
+          {
+            "enum": ["first"],
+            "title": "First option."
+          },
+          {
+            "enum": ["second"],
+            "title": "Second option."
+          }
+        ]
+      },
+      "array": {
+        "description": "An array of elements.",
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "one",
+            "two",
+            "three",
+            "four",
+            "five"
+          ]
+        }
+      }
+    }
+  }
+}
