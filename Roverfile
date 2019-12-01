@@ -5,5 +5,7 @@ luarocks {
     module { 'lua-resty-repl' },
     -- to automatically validate policy manifests
     module { 'ljsonschema' },
+    -- to validate XML
+    module { 'xml2lua' }
   }
 }
