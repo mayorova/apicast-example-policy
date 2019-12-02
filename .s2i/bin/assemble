@@ -1,4 +1,9 @@
 #!/bin/sh
 
 echo "---> Copying policy source..."
+
 cp -Rf /tmp/src/. ./
+
+cp -Rf $(pwd)/policies /opt/app-root/src/policies
+
+echo "=======>>> "

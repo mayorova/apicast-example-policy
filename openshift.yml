@@ -127,4 +127,5 @@ parameters:
   value: registry.redhat.io/3scale-amp26/apicast-gateway
 - name: AMP_RELEASE
   required: true
-  description: AMP Version (eg. 2.2.0-GA)
+  description: AMP Version (e.g. 2.6)
+  value: "2.6"
